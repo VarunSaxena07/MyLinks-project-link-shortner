@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:max-w-4xl mx-auto">
         {/* Left Section: Profile Image */}
         <div className="flex flex-col items-center md:items-start">
-          <img
+          <Image
             src="/github.svg"
             alt="Profile Picture"
             className="w-40 h-40 rounded-full border-4 border-yellow-400 mb-4"
