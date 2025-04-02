@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
 
 const Shorten = () => {
   const [url, seturl] = useState("");
@@ -38,7 +39,16 @@ const Shorten = () => {
         setshorturl("");
         setError(""); // Clear error if successful
         console.log(result);
-        alert(result.message);
+        toast("URL Generated Successfully!", {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
       })
       .catch((error) => {
         console.error(error);
@@ -47,7 +57,19 @@ const Shorten = () => {
   };
 
   return (
-    <div className="flex flex-col mx-auto items-center max-w-lg bg-gradient-to-r from-purple-600 to-indigo-600 p-8 rounded-2xl shadow-2xl text-white my-10">
+    <div className="flex flex-col md:mx-auto items-center max-w-lg bg-gradient-to-r from-purple-600 to-indigo-600 p-8 rounded-2xl shadow-2xl text-white mx-10 my-4">
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={true}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <h1 className="text-3xl font-bold mb-6">Generate Your Short URLs</h1>
 
       <div className="flex flex-col w-full">
@@ -85,9 +107,15 @@ const Shorten = () => {
 
         {generated && (
           <div className="mt-4 p-3 bg-white bg-opacity-20 rounded-lg backdrop-blur-lg shadow-md animate-fade-in">
-            <span className="block text-sm font-medium text-gray-600">Your Short URL:</span>
+            <span className="block text-sm font-medium text-gray-600">
+              Your Short URL:
+            </span>
             <code className="text-lg font-bold">
-              <Link target="_blank" href={generated} className="text-blue-300 hover:underline">
+              <Link
+                target="_blank"
+                href={generated}
+                className="text-blue-300 hover:underline"
+              >
                 {generated}
               </Link>
             </code>

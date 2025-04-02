@@ -16,6 +16,8 @@ const About = () => {
         {/* Left Section: Profile Image */}
         <div className="flex flex-col items-center md:items-start">
           <Image
+          width={40}
+          height={40}
             src="/github.svg"
             alt="Profile Picture"
             className="w-40 h-40 rounded-full border-4 border-yellow-400 mb-4"

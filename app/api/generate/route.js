@@ -22,6 +22,6 @@ export async function POST(request) {
   return Response.json({
     success: true,
     error: false,
-    message: "URl Generated succesfully!",
+    message: "URL Generated succesfully!",
   });
 }

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const contact = () => {
+const contact  = () => {
   return (
     <div className="mx-auto flex justify-center items-center min-h-[85vh] bg-gray-900">
   <div className="card w-80 h-96 my-6 px-6 py-8 border-2 border-gray-700 rounded-3xl flex flex-col justify-center items-center gap-y-6 font-semibold text-white bg-gray-800 shadow-xl transition-transform duration-300 hover:scale-105">
