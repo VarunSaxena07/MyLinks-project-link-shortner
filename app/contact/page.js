@@ -16,7 +16,7 @@ const contact = () => {
       className="invert-100 animate-pulse"
     />
     <p className="text-center text-gray-300 text-sm">
-      "I’m a beginner in web development eager to learn and grow. My GitHub profile is a work in progress, and I'm excited to connect with the web dev community. Feel free to reach out and collaborate!"
+      &quot;I&apos;m a beginner in web development eager to learn and grow. My GitHub profile is a work in progress, and I&apos;m excited to connect with the web dev community. Feel free to reach out and collaborate!&quot;
     </p>
     <Link target="_blank" href="https://github.com/VarunSaxena07">
       <button className="bg-amber-500 text-gray-900 px-6 py-2 rounded-lg shadow-lg transition-all duration-300 transform hover:bg-amber-400 hover:scale-110 active:scale-95">

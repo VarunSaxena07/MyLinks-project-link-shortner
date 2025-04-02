@@ -26,11 +26,11 @@ const About = () => {
         {/* Right Section: Description */}
         <div className="max-w-xl text-center md:text-left">
           <p className="text-xl text-gray-200 mb-4">
-            Hi, I'm a beginner web developer with a passion for creating dynamic and responsive websites. My journey in web development started recently, and I am constantly learning new technologies to improve my skills.
+            Hi, I&apos;m a beginner web developer with a passion for creating dynamic and responsive websites. My journey in web development started recently, and I am constantly learning new technologies to improve my skills.
           </p>
 
           <p className="text-lg text-gray-400 mb-4">
-            I love working with HTML, CSS, JavaScript, and React. I'm also excited to explore other web development tools and frameworks as I grow in my career.
+            I love working with HTML, CSS, JavaScript, and React. I&apos;m also excited to explore other web development tools and frameworks as I grow in my career.
           </p>
 
           <p className="text-lg text-gray-400 mb-4">

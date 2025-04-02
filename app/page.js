@@ -10,9 +10,9 @@ export default function Home() {
             Best URL Shortner
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
-            "Shorten, manage, and track your URLs effortlessly with our fast,
+            &quot;Shorten, manage, and track your URLs effortlessly with our fast,
             secure, and user-friendly short URL service. Optimize sharing
-            today!"
+            today!&quot;
           </p>
         </div>
         <div className=" flex justify-center items-center relative h-[50vh] md:h-[80vh]">
