@@ -38,7 +38,6 @@ const Shorten = () => {
         seturl("");
         setshorturl("");
         setError(""); // Clear error if successful
-        console.log(result);
         toast("URL Generated Successfully!", {
           position: "top-center",
           autoClose: 3000,
@@ -51,7 +50,6 @@ const Shorten = () => {
         });
       })
       .catch((error) => {
-        console.error(error);
         setError("Something went wrong. Please try again!"); // Handle errors
       });
   };
